@@ -67,3 +67,12 @@ puts "A group of flamingos is called a " + answer + "."
 ```
 
 There's debate about the best practice but most people at Learn think the first way looks nicer and is easier for your fellow programmers to read.
+
+> Note: In Ruby strings can be created with both ''(single quotes) and ""(double
+quotes).  However, usage of single or double quotes is not equal.  Specifically,
+single quoted strings cannot contain interpolated data.  The following single
+quoted string will not interpolated the data 1 + 1: `'One plus one is equal to #{1 +
+1}.'`  Additionally, single quoted strings will end prematurely when the string
+contains a word with an apostrophe because the apostrophe will signal the end
+of the string.  For these reasons, it's best practice to construct strings with
+double quotes unless you have a special reason to use single quotes.
